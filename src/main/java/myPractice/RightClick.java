@@ -19,6 +19,11 @@ public class RightClick {
 		driver.manage().window().maximize();
 		WebElement rightclick = driver.findElement(By.xpath("//span[text ()= 'right click me']"));
 
+		/**
+		 * Acctions class is also used for righ click on the element. Using contextClick
+		 * method and passing the element to be right clicked on.
+		 */
+		
 		Actions act = new Actions(driver);
 
 		act.contextClick(rightclick).build().perform();
@@ -31,6 +36,11 @@ public class RightClick {
 			String name = e.getText();
 			if (name.equals("Copy")) {
 				e.click();
+				
+				/**
+				 * After right clicking on the element we are getting an alert pop up So we are
+				 * using Alert class to handle the alert.
+				 */
 
 				Alert alert = driver.switchTo().alert();
 				System.out.println(alert.getText());
