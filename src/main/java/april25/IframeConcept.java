@@ -1,4 +1,4 @@
-package april23;
+package april25;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,6 +22,7 @@ public class IframeConcept {
 			
 		
 		driver.switchTo().defaultContent();
+		driver.quit();
 		
 	}
 

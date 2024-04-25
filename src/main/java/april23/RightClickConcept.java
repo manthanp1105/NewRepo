@@ -39,7 +39,7 @@ public class RightClickConcept {
 					break;
 				}
 		}
-		driver.quit();
+		//driver.quit();
 		
 
 	}
