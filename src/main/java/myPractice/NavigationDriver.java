@@ -17,7 +17,7 @@ public class NavigationDriver {
 		/*
 		 * driver can be launched 2 ways.
 		 * .get method and navigate.to method. Both will work fine.
-		 * NOTE: navigate.to mthod internally calling .get method only. so better to use .get method to launch the url.
+		 * NOTE: navigate.to method internally calling .get method only. so better to use .get method to launch the url.
 		 * navigate.to method is slower than .get method. beacuse it has to call internal .get method.
 		 */
 		
@@ -25,6 +25,7 @@ public class NavigationDriver {
 		
 		driver.get(url);
 		
+		// This method is internally calling ".get" method.
 		driver.navigate().to(url);
 		driver.manage().window().maximize();
 		
